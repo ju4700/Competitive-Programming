@@ -15,9 +15,6 @@ void heapify(vector<int>& a, int n, int i){
 
 int main() 
 {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr); cout.tie(nullptr);
-    
     int n; cin >> n;
     vector<int> a(n);
     for(int i; i < n; i++) cin >> a[i];
@@ -28,7 +25,7 @@ int main()
         swap(a[0], a[i]);
         heapify(a, i, 0);
     }
-    
+
     cout << "Sorted array: ";
     for(int i = 0; i < n; i++) cout << a[i] << " ";
     return 0; 
